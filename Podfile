@@ -15,4 +15,4 @@ pod 'Firebase/RemoteConfig'
 pod 'TextFieldEffects'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
-
+pod 'Firebase/Storage'

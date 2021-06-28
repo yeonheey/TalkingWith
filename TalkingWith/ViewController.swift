@@ -55,8 +55,7 @@ class ViewController: UIViewController {
         
         if caps { //경고창 띄워주기
             let alert = UIAlertController(title: "공지사항", message: message, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: { (action) in
-                                            exit(0)
+            alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: { (action) in exit(0)
             }))
             
             self.present(alert, animated: true, completion: nil)

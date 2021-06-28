@@ -13,6 +13,9 @@ PODS:
   - Firebase/RemoteConfig (8.2.0):
     - Firebase/CoreOnly
     - FirebaseRemoteConfig (~> 8.2.0)
+  - Firebase/Storage (8.2.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (~> 8.2.0)
   - FirebaseABTesting (8.2.0):
     - FirebaseCore (~> 8.0)
   - FirebaseAnalytics (8.2.0):
@@ -61,6 +64,9 @@ PODS:
     - FirebaseInstallations (~> 8.0)
     - GoogleUtilities/Environment (~> 7.4)
     - "GoogleUtilities/NSData+zlib (~> 7.4)"
+  - FirebaseStorage (8.2.0):
+    - FirebaseCore (~> 8.0)
+    - GTMSessionFetcher/Core (~> 1.5)
   - GoogleAppMeasurement (8.2.0):
     - GoogleAppMeasurement/AdIdSupport (= 8.2.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
@@ -113,6 +119,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/RemoteConfig
+  - Firebase/Storage
   - SnapKit (~> 5.0.0)
   - TextFieldEffects
 
@@ -127,6 +134,7 @@ SPEC REPOS:
     - FirebaseDatabase
     - FirebaseInstallations
     - FirebaseRemoteConfig
+    - FirebaseStorage
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
@@ -147,6 +155,7 @@ SPEC CHECKSUMS:
   FirebaseDatabase: 9c231733363229ac26a55ee9ae9031e94cdb9a7d
   FirebaseInstallations: 9394ea09e242bf0816e95ac30e56a9214cc86ced
   FirebaseRemoteConfig: 6695557b3dac704527c952502e799586941d399e
+  FirebaseStorage: 001a1f6b1ec45ed60ff9689390d23988e4b95a61
   GoogleAppMeasurement: b52eafc9dff542d580700e708216568bd2fbf168
   GoogleDataTransport: 04c3e9a480bbcaa2ec3f5d27f1cdeb6a92f20c8d
   GoogleUtilities: 45dbb24a7f351d69d0a601482b39ad6c32e30dab
@@ -157,6 +166,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: ca17001f9d85078a9b63ae7a0bdbe84e48991b04
+PODFILE CHECKSUM: 73452ae98f6d7ade39eb0c9da3a171d4dd05b769
 
 COCOAPODS: 1.10.1

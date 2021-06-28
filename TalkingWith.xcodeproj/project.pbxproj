@@ -90,15 +90,15 @@
 		9FFA72AA26877CC800524F90 /* TalkingWith */ = {
 			isa = PBXGroup;
 			children = (
+				9FFA72B426877CC900524F90 /* Assets.xcassets */,
 				9FD0AAF52688C50900EDD945 /* Property List */,
 				9FFA72AB26877CC800524F90 /* AppDelegate.swift */,
 				9FFA72AD26877CC800524F90 /* SceneDelegate.swift */,
-				9FFA72AF26877CC800524F90 /* ViewController.swift */,
-				9FFA72B126877CC800524F90 /* Main.storyboard */,
-				9F9E5E522688DD63003DC099 /* SignUpViewController.swift */,
-				9F9E5E502688D277003DC099 /* LoginViewController.swift */,
-				9FFA72B426877CC900524F90 /* Assets.xcassets */,
 				9FFA72B626877CC900524F90 /* LaunchScreen.storyboard */,
+				9FFA72B126877CC800524F90 /* Main.storyboard */,
+				9FFA72AF26877CC800524F90 /* ViewController.swift */,
+				9F9E5E502688D277003DC099 /* LoginViewController.swift */,
+				9F9E5E522688DD63003DC099 /* SignUpViewController.swift */,
 			);
 			path = TalkingWith;
 			sourceTree = "<group>";

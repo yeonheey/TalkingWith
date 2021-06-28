@@ -127,10 +127,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_add_to_photos" translatesAutoresizingMaskIntoConstraints="NO" id="G0U-2Z-tew">
+                                <rect key="frame" x="157" y="219" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="W2H-EI-W29"/>
+                                    <constraint firstAttribute="height" constant="100" id="q5Z-SJ-Yad"/>
+                                </constraints>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3xW-Af-u5L" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="20" y="423" width="374" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="yc3-zJ-N64"/>
+                                    <constraint firstAttribute="height" constant="40" id="ChW-Yd-GYT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -146,7 +153,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5c8-Mu-Hln" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="20" y="375" width="374" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="FSz-Km-E6i"/>
+                                    <constraint firstAttribute="height" constant="40" id="ej6-sL-iqS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -162,7 +169,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bsQ-Tt-B27" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="20" y="327" width="374" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="hdf-ge-tZa"/>
+                                    <constraint firstAttribute="height" constant="40" id="W0N-sX-r8G"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -176,18 +183,18 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Am-jd-bre">
-                                <rect key="frame" x="20" y="471" width="374" height="45"/>
+                                <rect key="frame" x="20" y="471" width="374" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="w1u-b1-q27"/>
+                                    <constraint firstAttribute="height" constant="40" id="Ctf-Kg-rct"/>
                                 </constraints>
                                 <state key="normal" title="회원가입">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiZ-zj-zRf">
-                                <rect key="frame" x="20" y="524" width="374" height="45"/>
+                                <rect key="frame" x="20" y="519" width="374" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="vXK-7Q-vo7"/>
+                                    <constraint firstAttribute="height" constant="40" id="nFS-pU-QxM"/>
                                 </constraints>
                                 <state key="normal" title="취소">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -197,26 +204,29 @@
                         <viewLayoutGuide key="safeArea" id="gaU-RU-mKn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="aiZ-zj-zRf" firstAttribute="leading" secondItem="gaU-RU-mKn" secondAttribute="leading" constant="20" id="1Y1-qx-joD"/>
-                            <constraint firstItem="gaU-RU-mKn" firstAttribute="trailing" secondItem="aiZ-zj-zRf" secondAttribute="trailing" constant="20" id="1fi-pR-HC3"/>
-                            <constraint firstItem="3xW-Af-u5L" firstAttribute="top" secondItem="5c8-Mu-Hln" secondAttribute="bottom" constant="8" symbolic="YES" id="BO9-J9-8pL"/>
-                            <constraint firstItem="gaU-RU-mKn" firstAttribute="trailing" secondItem="5Am-jd-bre" secondAttribute="trailing" constant="20" id="Cey-tT-VDs"/>
-                            <constraint firstItem="gaU-RU-mKn" firstAttribute="trailing" secondItem="3xW-Af-u5L" secondAttribute="trailing" constant="20" id="UJf-vg-dZ5"/>
-                            <constraint firstItem="5Am-jd-bre" firstAttribute="leading" secondItem="gaU-RU-mKn" secondAttribute="leading" constant="20" id="bDI-m6-lqg"/>
-                            <constraint firstItem="bsQ-Tt-B27" firstAttribute="top" secondItem="gaU-RU-mKn" secondAttribute="top" constant="283" id="bIi-z3-Tkl"/>
-                            <constraint firstItem="3xW-Af-u5L" firstAttribute="leading" secondItem="gaU-RU-mKn" secondAttribute="leading" constant="20" id="g1L-mw-N4D"/>
-                            <constraint firstItem="5Am-jd-bre" firstAttribute="top" secondItem="3xW-Af-u5L" secondAttribute="bottom" constant="8" symbolic="YES" id="gdv-cd-LSc"/>
-                            <constraint firstItem="5c8-Mu-Hln" firstAttribute="leading" secondItem="gaU-RU-mKn" secondAttribute="leading" constant="20" id="npl-C3-QoB"/>
-                            <constraint firstItem="gaU-RU-mKn" firstAttribute="trailing" secondItem="bsQ-Tt-B27" secondAttribute="trailing" constant="20" id="sZJ-EJ-UG9"/>
-                            <constraint firstItem="bsQ-Tt-B27" firstAttribute="leading" secondItem="gaU-RU-mKn" secondAttribute="leading" constant="20" id="tHL-IZ-N0S"/>
-                            <constraint firstItem="gaU-RU-mKn" firstAttribute="trailing" secondItem="5c8-Mu-Hln" secondAttribute="trailing" constant="20" id="v5o-ry-AGl"/>
-                            <constraint firstItem="5c8-Mu-Hln" firstAttribute="top" secondItem="bsQ-Tt-B27" secondAttribute="bottom" constant="8" symbolic="YES" id="yN1-Lq-1Ot"/>
-                            <constraint firstItem="aiZ-zj-zRf" firstAttribute="top" secondItem="5Am-jd-bre" secondAttribute="bottom" constant="8" symbolic="YES" id="ygR-ov-4GL"/>
+                            <constraint firstItem="3xW-Af-u5L" firstAttribute="leading" secondItem="gaU-RU-mKn" secondAttribute="leading" constant="20" id="1pW-Z6-gWy"/>
+                            <constraint firstItem="5Am-jd-bre" firstAttribute="top" secondItem="3xW-Af-u5L" secondAttribute="bottom" constant="8" symbolic="YES" id="9gH-0M-htn"/>
+                            <constraint firstItem="gaU-RU-mKn" firstAttribute="trailing" secondItem="3xW-Af-u5L" secondAttribute="trailing" constant="20" id="BIU-a4-d3h"/>
+                            <constraint firstItem="gaU-RU-mKn" firstAttribute="trailing" secondItem="5Am-jd-bre" secondAttribute="trailing" constant="20" id="BrJ-8r-fFW"/>
+                            <constraint firstItem="5c8-Mu-Hln" firstAttribute="top" secondItem="bsQ-Tt-B27" secondAttribute="bottom" constant="8" symbolic="YES" id="Ccw-Dc-Eah"/>
+                            <constraint firstItem="bsQ-Tt-B27" firstAttribute="top" secondItem="G0U-2Z-tew" secondAttribute="bottom" constant="8" symbolic="YES" id="Kj1-r9-Ado"/>
+                            <constraint firstItem="gaU-RU-mKn" firstAttribute="trailing" secondItem="bsQ-Tt-B27" secondAttribute="trailing" constant="20" id="NoE-tz-rwE"/>
+                            <constraint firstItem="bsQ-Tt-B27" firstAttribute="leading" secondItem="gaU-RU-mKn" secondAttribute="leading" constant="20" id="fxO-dy-1hv"/>
+                            <constraint firstItem="G0U-2Z-tew" firstAttribute="top" secondItem="gaU-RU-mKn" secondAttribute="top" constant="175" id="hWt-pg-QEK"/>
+                            <constraint firstItem="5Am-jd-bre" firstAttribute="leading" secondItem="gaU-RU-mKn" secondAttribute="leading" constant="20" id="i15-C5-O2q"/>
+                            <constraint firstItem="aiZ-zj-zRf" firstAttribute="top" secondItem="5Am-jd-bre" secondAttribute="bottom" constant="8" symbolic="YES" id="j7x-jk-wCu"/>
+                            <constraint firstItem="5c8-Mu-Hln" firstAttribute="leading" secondItem="gaU-RU-mKn" secondAttribute="leading" constant="20" id="lbh-Cc-lFK"/>
+                            <constraint firstItem="gaU-RU-mKn" firstAttribute="trailing" secondItem="5c8-Mu-Hln" secondAttribute="trailing" constant="20" id="m0J-XS-Btj"/>
+                            <constraint firstItem="3xW-Af-u5L" firstAttribute="top" secondItem="5c8-Mu-Hln" secondAttribute="bottom" constant="8" symbolic="YES" id="u2p-34-sOt"/>
+                            <constraint firstItem="gaU-RU-mKn" firstAttribute="trailing" secondItem="aiZ-zj-zRf" secondAttribute="trailing" constant="20" id="waT-FU-8qq"/>
+                            <constraint firstItem="aiZ-zj-zRf" firstAttribute="leading" secondItem="gaU-RU-mKn" secondAttribute="leading" constant="20" id="yqJ-oH-hux"/>
+                            <constraint firstItem="G0U-2Z-tew" firstAttribute="centerX" secondItem="3Wt-Sz-qY5" secondAttribute="centerX" id="yzQ-hZ-hAJ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cancelButton" destination="aiZ-zj-zRf" id="jPW-CV-mrZ"/>
                         <outlet property="emailTextField" destination="bsQ-Tt-B27" id="dPt-JU-65S"/>
+                        <outlet property="imageView" destination="G0U-2Z-tew" id="VA7-S7-shS"/>
                         <outlet property="nameTextField" destination="5c8-Mu-Hln" id="Edr-5c-VnG"/>
                         <outlet property="passwordTextField" destination="3xW-Af-u5L" id="6v7-u0-Q7z"/>
                         <outlet property="signUpButton" destination="5Am-jd-bre" id="hBk-8m-dvs"/>
@@ -245,6 +255,7 @@
         </designable>
     </designables>
     <resources>
+        <image name="icon_add_to_photos" width="24" height="24"/>
         <image name="loading_icon" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
