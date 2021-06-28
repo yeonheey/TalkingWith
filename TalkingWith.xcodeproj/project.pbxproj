@@ -10,6 +10,7 @@
 		6BB6F925E029B696C5D04EDB /* Pods_TalkingWith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDADC225F0EB7F5EFEF0871 /* Pods_TalkingWith.framework */; };
 		9F9E5E512688D277003DC099 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E5E502688D277003DC099 /* LoginViewController.swift */; };
 		9F9E5E532688DD63003DC099 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E5E522688DD63003DC099 /* SignUpViewController.swift */; };
+		9FBA4A532689E7E000220D97 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA4A522689E7E000220D97 /* MainViewController.swift */; };
 		9FD0AAF32688668A00EDD945 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FD0AAF22688668A00EDD945 /* RemoteConfigDefaults.plist */; };
 		9FFA72AC26877CC800524F90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFA72AB26877CC800524F90 /* AppDelegate.swift */; };
 		9FFA72AE26877CC800524F90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFA72AD26877CC800524F90 /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 		1EDADC225F0EB7F5EFEF0871 /* Pods_TalkingWith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkingWith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9E5E502688D277003DC099 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9F9E5E522688DD63003DC099 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9FBA4A522689E7E000220D97 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9FD0AAF22688668A00EDD945 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		9FFA72A826877CC800524F90 /* TalkingWith.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkingWith.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFA72AB26877CC800524F90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				9FFA72AD26877CC800524F90 /* SceneDelegate.swift */,
 				9FFA72B626877CC900524F90 /* LaunchScreen.storyboard */,
 				9FFA72B126877CC800524F90 /* Main.storyboard */,
+				9FBA4A522689E7E000220D97 /* MainViewController.swift */,
 				9FFA72AF26877CC800524F90 /* ViewController.swift */,
 				9F9E5E502688D277003DC099 /* LoginViewController.swift */,
 				9F9E5E522688DD63003DC099 /* SignUpViewController.swift */,
@@ -230,6 +233,7 @@
 				9F9E5E512688D277003DC099 /* LoginViewController.swift in Sources */,
 				9FFA72B026877CC800524F90 /* ViewController.swift in Sources */,
 				9FFA72AC26877CC800524F90 /* AppDelegate.swift in Sources */,
+				9FBA4A532689E7E000220D97 /* MainViewController.swift in Sources */,
 				9FFA72AE26877CC800524F90 /* SceneDelegate.swift in Sources */,
 				9F9E5E532688DD63003DC099 /* SignUpViewController.swift in Sources */,
 			);

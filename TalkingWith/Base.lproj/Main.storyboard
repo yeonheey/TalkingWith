@@ -44,7 +44,7 @@
                                     <constraint firstAttribute="height" constant="40" id="aRV-P8-SG8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                         <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -112,7 +112,9 @@
                     </view>
                     <connections>
                         <outlet property="SignUpButton" destination="vqj-Vt-u7z" id="G4g-DC-76I"/>
+                        <outlet property="emailTextField" destination="B2w-Bx-LVg" id="eq6-T9-mQK"/>
                         <outlet property="loginButton" destination="Y8f-4j-Z79" id="Nlq-yG-FQi"/>
+                        <outlet property="passwordTextField" destination="BWR-es-slQ" id="pZJ-6T-LRx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJk-7A-FSV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -140,7 +142,7 @@
                                     <constraint firstAttribute="height" constant="40" id="ChW-Yd-GYT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                         <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -234,12 +236,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbE-ay-BKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1591" y="94"/>
+            <point key="canvasLocation" x="1532" y="94"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="q1Z-e8-y6D">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="qhB-c3-Btc" customClass="MainViewController" customModule="TalkingWith" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dfD-W0-bCs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="haA-WI-rTN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JOc-ON-bM2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2248" y="94"/>
         </scene>
     </scenes>
     <designables>
         <designable name="3xW-Af-u5L">
-            <size key="intrinsicContentSize" width="76.5" height="23.5"/>
+            <size key="intrinsicContentSize" width="76.5" height="22"/>
         </designable>
         <designable name="5c8-Mu-Hln">
             <size key="intrinsicContentSize" width="52" height="23.5"/>
@@ -248,7 +265,7 @@
             <size key="intrinsicContentSize" width="57" height="28"/>
         </designable>
         <designable name="BWR-es-slQ">
-            <size key="intrinsicContentSize" width="91.5" height="28"/>
+            <size key="intrinsicContentSize" width="91.5" height="27"/>
         </designable>
         <designable name="bsQ-Tt-B27">
             <size key="intrinsicContentSize" width="48.5" height="23.5"/>
