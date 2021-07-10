@@ -69,8 +69,6 @@ class ViewController: UIViewController {
         }
         self.view.backgroundColor = UIColor(hex: color!)
     }
-
-
 }
 
 //hex color (입력 용이)
