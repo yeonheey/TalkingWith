@@ -1,5 +1,4 @@
 PODS:
-  - Alamofire (5.4.3)
   - Firebase/Auth (8.2.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 8.2.0)
@@ -105,36 +104,17 @@ PODS:
   - GoogleUtilities/UserDefaults (7.4.3):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.6.1)
-  - KakaoSDKAuth (2.5.3):
-    - KakaoSDKCommon (= 2.5.3)
-  - KakaoSDKCommon (2.5.3):
-    - KakaoSDKCommon/Common (= 2.5.3)
-    - KakaoSDKCommon/Network (= 2.5.3)
-  - KakaoSDKCommon/Common (2.5.3)
-  - KakaoSDKCommon/Network (2.5.3):
-    - Alamofire (~> 5.1)
-    - KakaoSDKCommon/Common (= 2.5.3)
-  - KakaoSDKLink (2.5.3):
-    - KakaoSDKCommon (= 2.5.3)
-    - KakaoSDKTemplate (= 2.5.3)
-  - KakaoSDKNavi (2.5.3):
-    - KakaoSDKCommon/Common (= 2.5.3)
-  - KakaoSDKStory (2.5.3):
-    - KakaoSDKUser (= 2.5.3)
-  - KakaoSDKTalk (2.5.3):
-    - KakaoSDKTemplate (= 2.5.3)
-    - KakaoSDKUser (= 2.5.3)
-  - KakaoSDKTemplate (2.5.3):
-    - KakaoSDKCommon/Common (= 2.5.3)
-  - KakaoSDKUser (2.5.3):
-    - KakaoSDKAuth (= 2.5.3)
   - leveldb-library (1.22.1)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
+  - ObjectMapper (4.2.0)
   - PromisesObjC (1.2.12)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
   - SnapKit (5.0.1)
   - TextFieldEffects (1.6.0)
 
@@ -144,20 +124,13 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/RemoteConfig
   - Firebase/Storage
-  - KakaoSDKAuth
-  - KakaoSDKCommon
-  - KakaoSDKLink
-  - KakaoSDKNavi
-  - KakaoSDKStory
-  - KakaoSDKTalk
-  - KakaoSDKTemplate
-  - KakaoSDKUser
+  - ObjectMapper
+  - SDWebImage
   - SnapKit (~> 5.0.0)
   - TextFieldEffects
 
 SPEC REPOS:
   trunk:
-    - Alamofire
     - Firebase
     - FirebaseABTesting
     - FirebaseAnalytics
@@ -172,22 +145,15 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleUtilities
     - GTMSessionFetcher
-    - KakaoSDKAuth
-    - KakaoSDKCommon
-    - KakaoSDKLink
-    - KakaoSDKNavi
-    - KakaoSDKStory
-    - KakaoSDKTalk
-    - KakaoSDKTemplate
-    - KakaoSDKUser
     - leveldb-library
     - nanopb
+    - ObjectMapper
     - PromisesObjC
+    - SDWebImage
     - SnapKit
     - TextFieldEffects
 
 SPEC CHECKSUMS:
-  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   Firebase: 12c568897b807321964e89d2b263ef4c6cff3db6
   FirebaseABTesting: 5f37131c5eceea579c471c915f7a0f8cad484d1f
   FirebaseAnalytics: 7a744b1e7dc50125cb37714c6bdaea167e412082
@@ -202,20 +168,14 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 04c3e9a480bbcaa2ec3f5d27f1cdeb6a92f20c8d
   GoogleUtilities: 45dbb24a7f351d69d0a601482b39ad6c32e30dab
   GTMSessionFetcher: 36689134877faeb055b27dfa4ccc9ceaa42e029e
-  KakaoSDKAuth: b1a0b9a84c21c967c4139d221edce83a7f15cdfe
-  KakaoSDKCommon: 08548932f6f570215ea038241a98157c0b3f7a8b
-  KakaoSDKLink: 4d35879b0abd90fbd0bc0de56dbb06097e9b31d3
-  KakaoSDKNavi: 31fd6ad030cf7200d546202cbe22f7a8b38eb983
-  KakaoSDKStory: 6d666f665fbe4b8453ce19959b9bb9e3bf38a5df
-  KakaoSDKTalk: 58cf9c530cc8024ae2ed3839d40acd992ecaf909
-  KakaoSDKTemplate: 5939681de6c24fd81e93bf824982e979e794f87e
-  KakaoSDKUser: 5d2de71fe070455bbaaad6a37af3eb500fbc8972
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: 7830461d4157c307b42cf8e99bd9871c2dd47752
+PODFILE CHECKSUM: 3b0e44d727e64bf2568817fecd6875ed8ed14909
 
 COCOAPODS: 1.10.1

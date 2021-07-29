@@ -5,9 +5,8 @@
 //  Created by 정연희 on 2021/06/27.
 //
 
-import Firebase
-import KakaoSDKCommon
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        KakaoSDKCommon.initSDK(appKey: "30d52d1e8122b7b6448614fc3d001f15")
+        //KakaoSDKCommon.initSDK(appKey: "30d52d1e8122b7b6448614fc3d001f15")
         return true
     }
 

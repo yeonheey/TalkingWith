@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import TextFieldEffects
 import Firebase
 
 class SignUpViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
+    // MARK: - Properties
     let remoteConfig = RemoteConfig.remoteConfig()
     var color: String?
 
@@ -21,6 +23,7 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate, UI
     
     @IBOutlet weak var imageView: UIImageView!
     
+    // MARK: - Override Method
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -46,6 +49,14 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate, UI
         cancelButton.addTarget(self, action: #selector(cancelEvent), for: .touchUpInside)
     }
 
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image: UIImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            imageView.image = image
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
+    // MARK: -Custom Method
     @objc func imagePicker() {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
@@ -54,15 +65,6 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate, UI
         
         self.present(imagePicker, animated: true, completion: nil)
     }
-    
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image: UIImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            imageView.image = image
-        }
-        dismiss(animated: true, completion: nil)
-    }
-    
     
     @objc func signUpEvent() {
         guard let email = emailTextField.text else{ return }
@@ -76,19 +78,39 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate, UI
                 return
             }
             
-            //이미지 등록
+            // 이미지 등록
             let image = self.imageView.image?.jpegData(compressionQuality: 0.1)
-            let imageReference = Storage.storage().reference().child("userImages").child(user.uid)
+            // 이미지를 저장할 경로
+            let imageReference = Storage.storage().reference().child("userImages").child("\(user.uid).jpg")
+            
             imageReference.putData(image!, metadata: nil, completion: { (storageMetaData, error) in
+                
                 imageReference.downloadURL(completion: { (url, error) in
-                    Database.database().reference().child("user").setValue(["userName":self.nameTextField.text, "profileImageUrl": url?.absoluteString])
+                    
+                    var userModel = UserModel()
+                    userModel.userName = self.nameTextField.text
+                    userModel.profileImageUrl = url?.absoluteString
+                    userModel.uid = Auth.auth().currentUser?.uid
+                    
+                    // database에 사용자 정보 입력
+                    Database.database().reference().child("users").child(user.uid).setValue(userModel.toJSON) { err, reference in
+                        if err == nil {
+                            self.dismiss(animated: true, completion: nil)
+                        }
+                    }
+                    
                 })
             })
             
-            Database.database().reference().child("users").child(user.uid).setValue(["name": self.nameTextField.text!])
+            let values = ["name": self.nameTextField.text!]
+            Database.database().reference().child("users").child(user.uid).setValue(values) { error, reference in
+                if error == nil {
+                    self.cancelEvent()
+                }
+            }
             print("\(user.email!) created")
-          }
         }
+    }
     
     @objc func cancelEvent() {
         self.dismiss(animated: true, completion: nil)

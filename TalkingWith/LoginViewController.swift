@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import TextFieldEffects
 import Firebase
 
 class LoginViewController: UIViewController {
@@ -13,6 +14,8 @@ class LoginViewController: UIViewController {
     //https://github.com/raulriera/TextFieldEffects 사용
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var SignUpButton: UIButton!
+    // @IBOutlet weak var kakaoLoginButton: UIButton!
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -40,10 +43,11 @@ class LoginViewController: UIViewController {
         
         loginButton.addTarget(self, action: #selector(loginEvent), for: .touchUpInside)
         SignUpButton.addTarget(self, action: #selector(presentSignUp), for: .touchUpInside)
+        // kakaoLoginButton.addTarget(self, action: #selector(kakaoLoginEvent), for: .touchUpInside)
         
         Auth.auth().addStateDidChangeListener { (auth, user) in
             if user != nil {
-                let view = self.storyboard?.instantiateViewController(identifier: "MainViewController") as! MainViewController
+                let view = self.storyboard?.instantiateViewController(identifier: "MainViewTabBarController") as! UITabBarController
                 self.present(view, animated: true, completion: nil)
             }
         }
@@ -66,9 +70,28 @@ class LoginViewController: UIViewController {
         }
     }
     
-
+    /* @objc func kakaoLoginEvent() {
+        print("click kakao button")
+        
+        if UserApi.isKakaoTalkLoginAvailable() {
+            UserApi.shared.loginWithKakaoTalk { (oauthToken, error) in
+                if let error = error {
+                    print(error)
+                }
+                else {
+                    print("loginWithKakaoTalk() success.")
+                    
+                    _ = oauthToken
+                    let accessToken = oauthToken?.accessToken
+                }
+            }
+        } else {
+            print("no kakao")
+        }
+    } */
+    
     /*
-    // MARK: - Navigation
+     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
